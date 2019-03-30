@@ -18,6 +18,7 @@ public class Ingredient {
     private UnitOfMeasure uom;
 
     public UnitOfMeasure getUom() {
+        System.out.println("this is test");
         return uom;
     }
 
