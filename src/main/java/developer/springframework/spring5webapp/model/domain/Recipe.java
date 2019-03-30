@@ -21,6 +21,25 @@ public class Recipe {
     @Lob
     private Byte image;
 
+
+    public Set<Ingredient> getIngredientSet() {
+        return ingredientSet;
+    }
+
+    public void setIngredientSet(Set<Ingredient> ingredientSet) {
+        this.ingredientSet = ingredientSet;
+    }
+
+    private Difficulty difficulty;
+
+    public Difficulty getDifficulty() {
+        return difficulty;
+    }
+
+    public void setDifficulty(Difficulty difficulty) {
+        this.difficulty = difficulty;
+    }
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "recipe")
     private Set<Ingredient> ingredientSet;
 
