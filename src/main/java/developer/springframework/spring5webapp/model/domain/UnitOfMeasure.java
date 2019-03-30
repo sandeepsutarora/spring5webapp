@@ -17,5 +17,6 @@ public class UnitOfMeasure {
 
     public void setUom(String uom) {
         this.uom = uom;
+        System.out.println("This is just for test");
     }
 }
